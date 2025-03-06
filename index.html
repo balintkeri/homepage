@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Bálint kezdőlapja</h1>
+    </header>
+    <div class="container-wrapper">
+        <div class="column">
+            <div class="container">
+                <div class="header" onclick="toggleContent('google')">
+                    Google <span>▼</span>
+                </div>
+                <div class="content" id="google">
+                    <a href="https://www.google.com" class="link" target="_blank">📌 Google</a>
+                    <a href="https://www.youtube.com" class="link" target="_blank">🎥 YouTube</a>
+                    <a href="https://www.gmail.com" class="link" target="_blank">📧 Gmail</a>
+                    <a href="https://www.music.youtube.com" class="link" target="_blank">🎵 YouTube Music</a>
+                    <a href="https://www.maps.google.com" class="link" target="_blank">🗺️ Google Maps</a>
+                    <a href="https://www.translate.google.com" class="link" target="_blank">🌐 Google Translate</a>
+                    <a href="https://www.meet.google.com" class="link" target="_blank">📞 Google Meet</a>
+                    <a href="https://www.calendar.google.com" class="link" target="_blank">📅 Google Calendar</a>
+                    <a href="https://keep.google.com" class="link" target="_blank">📝 Google Keep</a>
+                    <a href="https://classroom.google.com" class="link" target="_blank">🏫 Google Classroom</a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="header" onclick="toggleContent('drive')">
+                    Drive <span>▼</span>
+                </div>
+                <div class="content" id="drive">
+                    <a href="https://drive.google.com" class="link" target="_blank">📂 Google Drive</a>
+                    <a href="https://docs.google.com" class="link" target="_blank">📝 Google Docs</a>
+                    <a href="https://sheets.google.com" class="link" target="_blank">📊 Google Sheets</a>
+                    <a href="https://slides.google.com" class="link" target="_blank">📑 Google Slides</a>
+                    <a href="https://forms.google.com" class="link" target="_blank">📋 Google Forms</a>
+                    <a href="https://sites.google.com" class="link" target="_blank">🌐 Google Sites</a>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="container">
+                <div class="header" onclick="toggleContent('streaming')">
+                    Streaming <span>▼</span>
+                </div>
+                <div class="content" id="streaming">
+                    <a href="https://www.netflix.com" class="link" target="_blank">🎬 Netflix</a>
+                    <a href="https://www.hbo.com" class="link" target="_blank">🎥 HBO GO</a>
+                    <a href="https://www.disneyplus.com" class="link" target="_blank">🏰 Disney+</a>
+                    <a href="https://www.twitch.tv" class="link" target="_blank"> 🎮 Twitch</a>
+                    <a href="https://www.m4sport.hu" class="link" target="_blank">🏅 M4 Sport</a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="header" onclick="toggleContent('social')">
+                    Social Media <span>▼</span>
+                </div>
+                <div class="content" id="social">
+                    <a href="https://www.facebook.com" class="link" target="_blank">👍 Facebook</a>
+                    <a href="https://www.instagram.com" class="link" target="_blank">📸 Instagram</a>
+                    <a href="https://www.twitter.com" class="link" target="_blank">🐦 Twitter</a>
+                    <a href="https://www.linkedin.com" class="link" target="_blank">👔 LinkedIn</a>
+                    <a href="https://www.mastodon.social" class="link" target="_blank">🐘 Mastodon</a>
+                    <a href="https://www.reddit.com" class="link" target="_blank">👽 Reddit</a>
+                    <a href="https://www.4chan.org" class="link" target="_blank">💬 4chan</a>
+                    <a href="https://www.discord.com" class="link" target="_blank">💬 Discord</a>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="container">
+                <div class="header" onclick="toggleContent('ai')">
+                    AI <span>▼</span>
+                </div>
+                <div class="content" id="ai">
+                    <a href="https://www.deepseek.com" class="link" target="_blank">🔍 Deepseek</a>
+                    <a href="https://github.com/features/copilot" class="link" target="_blank">🤖 GitHub Copilot</a>
+                    <a href="https://chat.openai.com" class="link" target="_blank">💬 ChatGPT</a>
+                    <a href="https://gemini.google.com" class="link" target="_blank">🔎 Google Gemini</a>
+                    <a href="https://www.mistral.ai" class="link" target="_blank">🌐 Mistral</a>
+                    <a href="https://www.anthropic.com/claude" class="link" target="_blank">🤖 Claude</a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="header" onclick="toggleContent('code')">
+                    Code <span>▼</span>
+                </div>
+                <div class="content" id="code">
+                    <a href="https://leetcode.com" class="link" target="_blank">💻 LeetCode</a>
+                    <a href="https://www.w3schools.com" class="link" target="_blank">📚 W3Schools</a>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="container">
+                <div class="header" onclick="toggleContent('news')">
+                    Hírek <span>▼</span>
+                </div>
+                <div class="content" id="news">
+                    <a href="https://telex.hu" class="link" target="_blank">📰 Telex</a>
+                    <a href="https://444.hu" class="link" target="_blank">📰 444</a>
+                    <a href="https://hvg.hu" class="link" target="_blank">📰 HVG</a>
+                    <a href="https://portfolio.hu" class="link" target="_blank">📰 Portfolio</a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="header" onclick="toggleContent('wordnews')">
+                    World News <span>▼</span>
+                </div>
+                <div class="content" id="wordnews">
+                    <a href="https://www.bbc.com" class="link" target="_blank">🌍 BBC</a>
+                    <a href="https://www.cnn.com" class="link" target="_blank">🌍 CNN</a>
+                    <a href="https://www.aljazeera.com" class="link" target="_blank">🌍 Al Jazeera</a>
+                    <a href="https://www.reuters.com" class="link" target="_blank">🌍 Reuters</a>
+                    <a href="https://www.nytimes.com" class="link" target="_blank">🌍 New York Times</a>
+                    <a href="https://www.theguardian.com" class="link" target="_blank">🌍 The Guardian</a>
+                    <a href="https://www.washingtonpost.com" class="link" target="_blank">🌍 Washington Post</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
